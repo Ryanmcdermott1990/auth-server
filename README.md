@@ -21,6 +21,7 @@ DB_CONNECTION=sqlite
 - npm i 
 - npm run dev 
 - php artisan migrate
+- php artisan serve --port=8001
 
 ## About Laravel
 
