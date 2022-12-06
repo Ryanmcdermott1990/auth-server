@@ -11,7 +11,7 @@
 
 - Clone Project 
 - change env.example to .env
-- change the db env variable to;, (the other db variables can be commented out)
+- change the db env variable to; (the other db variables can be commented out)
 
 DB_CONNECTION=sqlite
 
