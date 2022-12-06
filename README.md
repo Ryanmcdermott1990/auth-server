@@ -9,16 +9,16 @@
 
 ## Installation Guide 
 
-Clone Project 
-change env.example to .env
-change the db env variables to 
-DB_CONNECTION=sqlite
-composer update 
-composer install 
-composer require laravel/passport
-npm i 
-npm run dev 
-php artisan migrate
+- Clone Project 
+- change env.example to .env
+- change the db env variables to 
+- DB_CONNECTION=sqlite
+- composer update 
+- composer install 
+- composer require laravel/passport
+- npm i 
+- npm run dev 
+- php artisan migrate
 
 ## About Laravel
 
