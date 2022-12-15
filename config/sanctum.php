@@ -15,9 +15,10 @@ return [
     |
     */
 
+    // You will need to add the client app url to the list of stateful domains if the client app is a SPA
     'stateful' => explode(',', env('SANCTUM_STATEFUL_DOMAINS', sprintf(
         '%s%s',
-        'localhost,localhost:3000,127.0.0.1,127.0.0.1:8000,::1',
+        'localhost,localhost:3000,127.0.0.1,127.0.0.1:8000,::1', '127.0.0.1:8080',
         Sanctum::currentApplicationUrlWithPort()
     ))),
 

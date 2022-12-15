@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+// Created a get user route that can be used by the client app
+// This has been guarded by the auth:api middleware so that only authorized apps can access 
+Route::get('/user', function (Request $request) {
     return $request->user();
-});
+})->middleware('auth:api');
