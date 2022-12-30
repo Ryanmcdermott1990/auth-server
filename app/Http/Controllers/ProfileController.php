@@ -6,9 +6,17 @@ use App\Http\Requests\ProfileUpdateRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Http;
 
 class ProfileController extends Controller
 {
+
+    public function index()
+    {
+        $clients = Http::get('http://auth-server.test/oauth/clients');
+        // dd($clients);
+        return view('/dashboard', ['clients' => $clients]);
+    }
     /**
      * Display the user's profile form.
      *
